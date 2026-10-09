@@ -28,8 +28,6 @@ observability using --> Langfuse so every agent run can be inspected step by ste
 
 2. **Create the project folder and a virtual environment:**
 ```bash
-   mkdir adk_project
-   cd adk_project
    python -m venv .venv
 ```
 
