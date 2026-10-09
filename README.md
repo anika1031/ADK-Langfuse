@@ -20,4 +20,4 @@ observability using --> Langfuse so every agent run can be inspected step by ste
 
 ## Setup
 
-Full setup guide: [ADK + Langfuse Setup (Google Doc)]([https://docs.google.com/document/d/YOUR_DOC_ID/view](https://docs.google.com/document/d/1_98-gsgne4YY9Cr9o4xKXqNu-ucE6kYjvR8qULG_1XM/edit?usp=sharing
+Full setup guide: [ADK + Langfuse Setup (Google Doc)](https://docs.google.com/document/d/1_98-gsgne4YY9Cr9o4xKXqNu-ucE6kYjvR8qULG_1XM/edit?usp=sharing)
