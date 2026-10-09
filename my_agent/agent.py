@@ -19,13 +19,6 @@ def get_word_count(text: str) -> dict:
     """Counts the words in the given text."""
     return {"word_count": len(text.split())}
 
-from google.adk.agents import Agent
-from google.adk.models.lite_llm import LiteLlm
-
-def get_word_count(text: str) -> dict:
-    """Counts the words in the given text."""
-    return {"word_count": len(text.split())}
-
 def check_if_palindrome(text: str) -> dict:
     """Checks if the given text is a palindrome."""
     cleaned_text = ''.join(c.lower() for c in text if c.isalnum())
