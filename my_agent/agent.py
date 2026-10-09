@@ -15,11 +15,21 @@ GoogleADKInstrumentor().instrument()
 from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
 
+def get_word_count(text: str) -> dict:
+    """Counts the words in the given text."""
+    return {"word_count": len(text.split())}
+
+from google.adk.agents import Agent
+from google.adk.models.lite_llm import LiteLlm
 
 def get_word_count(text: str) -> dict:
     """Counts the words in the given text."""
     return {"word_count": len(text.split())}
 
+def check_if_palindrome(text: str) -> dict:
+    """Checks if the given text is a palindrome."""
+    cleaned_text = ''.join(c.lower() for c in text if c.isalnum())
+    return {"is_palindrome": cleaned_text == cleaned_text[::-1]}
 
 root_agent = Agent(
     name="groq_agent",
@@ -27,6 +37,8 @@ root_agent = Agent(
         model="groq/openai/gpt-oss-20b",
         include_reasoning=False,
     ),
-    instruction="You are a helpful assistant. Use tools when they are useful.",
-    tools=[get_word_count],
+    instruction="You are a helpful assistant. Use the tools provided to answer questions. " \
+    "Use get_word_count to count the number of words in a given text and " \
+    "check_if_palindrome to determine if a given text is a palindrome.",
+    tools=[get_word_count, check_if_palindrome],
 )

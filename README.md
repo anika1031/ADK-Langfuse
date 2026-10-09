@@ -21,3 +21,7 @@ observability using --> Langfuse so every agent run can be inspected step by ste
 ## Setup
 
 Full setup guide: [ADK + Langfuse Setup (Google Doc)](https://docs.google.com/document/d/1_98-gsgne4YY9Cr9o4xKXqNu-ucE6kYjvR8qULG_1XM/edit?usp=sharing)
+
+## How it works
+
+Interactive walkthrough of one real run, showing how the agent uses the LLM to pick a tool and why it must re-send the message history and tool result on every call: [Agent Tool Calling (Claude artifact)](https://claude.ai/artifact/NZ6L1gCoRp9zWCvpqj7JqT)
